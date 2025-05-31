@@ -1,12 +1,46 @@
-# React + Vite
+# 📊 Serverless Analytics Dashboard (AWS + React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional serverless analytics dashboard built with:
 
-Currently, two official plugins are available:
+- **Frontend**: React + Vite
+- **Backend**: AWS Lambda + API Gateway + DynamoDB
+- **Hosting**: S3 static website hosting
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Frontend UI](screenshots/dashboard-ui.png)
+![Successful Upload](screenshots/upload-success.png)
+
+---
+
+## 🚀 Features
+
+- Submit analytics events via POST
+- Store event data in DynamoDB via Lambda
+- View results on a React dashboard
+- Hosted on S3 as a static website
+
+---
+
+## 🧱 Technologies
+
+| Layer      | Tech                          |
+|------------|-------------------------------|
+| Frontend   | React + Vite                  |
+| Backend    | AWS Lambda (Python)           |
+| API        | API Gateway                   |
+| Storage    | DynamoDB                      |
+| Hosting    | S3 Static Website             |
+
+---
+
+## 🔧 Local Development
+
+### Frontend
+
+```bash
+cd analytics-dashboard
+npm install
+npm run dev
